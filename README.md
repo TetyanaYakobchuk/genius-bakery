@@ -1,3 +1,3 @@
 # genius-bakery
 
-Сегодня 09/10/25, начинаем двигаться к цели!
+ https://tetyanayakobchuk.github.io/genius-bakery/
