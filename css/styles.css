@@ -1,0 +1,194 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: 300;
+    src: url('../fonts/poppins-v24-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: 400;
+    src: url('../fonts/poppins-v24-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: 600;
+    src: url('../fonts/poppins-v24-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: 900;
+    src: url('../fonts/poppins-v24-latin-900.woff2') format('woff2');
+}
+
+
+:root {
+    --color-brand-light: #819B57;
+    --color-brand-dark: #465929;
+    --color-primary-light: #FAF4EA;
+    --color-primary-dark: #31261A;
+    --color-mobile-background: #CFCFBC;
+}
+/*----------BASE---------*/
+body {
+    color: var(--color-primary-dark);
+    background-color: var(--color-primary-light);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1,5;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.header {
+background-color: var(--color-mobile-background);
+    /*тут будет фото*/
+}
+
+
+.button {
+    background-color: var(--color-brand-light);
+    color: var(--color-primary-light);
+    border: 2px, var(--color-brand-light), solid;
+    border-radius: 8px;
+    cursor: pointer;
+    padding-top: 16px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    border-width: 2px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var(--color-brand-dark);
+}
+.button:focus {
+    background-color: pink;
+}
+
+/*----------HEADER---------*/
+.header-item-link {
+    color: var(--color-primary-light);
+    font-weight: 400;
+}
+.header-item-link:hover {
+    color: var(--color-brand-light);
+    font-weight: 600;
+}
+
+
+
+/*----------HERO---------*/
+.hero-title {
+    color: var(--color-primary-light);
+    font-weight: 900;
+    font-size: 128px;
+}
+.hero-title-decoration {
+    color: var(--color-brand-light);
+}
+
+/*----------ADVANTAGES---------*/
+.advantages-list {
+    background-color: var(--color-brand-light);
+    color: var(--color-primary-light);
+    font-weight: 300;
+}
+
+.advantages-item {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.section-title {
+    color: var(--color-primary-dark);
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.3;
+}
+.section-title-decoration {
+    color: var(--color-brand-dark);
+}
+
+/*-------------TRADITIONS----------*/
+.traditions-text .brand {
+    color: var(--color-brand-light);
+}
+.traditions-text .uppercase {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/*-----CHEFS SECTION----------*/
+.chef-title {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/*-----FORMATS SECTION----------*/
+.formats-article {
+    color: var(--color-primary-light);
+    background-color: var(--color-mobile-background); /*тут буде фон*/
+}
+.formats-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+.formats-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/*------CONTACT SECTION---------*/
+.contact-text {
+    color: var(--color-brand-dark);
+}
+.contact-privacy-text {
+    color: var(--color-primary-dark);
+    font-size: 12px;
+}
+.contact-privacy-text a {
+    text-decoration: underline;
+}
+
+/*------FOOTER SECTION---------*/
+.footer-section {
+    background-color: #31261A; /*-тут буде фон-*/
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-list-link {
+    color: var(--color-primary-light);
+}
+
+.address-link {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--color-primary-light);
+}
+.footer-privacy-link {
+    color: var(--color-primary-light);
+    font-weight: 300;
+    font-size: 16px;
+}
+.footer-privacy-text {
+    font-weight: 400;
+    color: #A18268;
+    font-size: 14px;
+}
