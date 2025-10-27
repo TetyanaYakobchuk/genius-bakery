@@ -35,6 +35,9 @@
     --color-mobile-background: #CFCFBC;
 }
 /*----------BASE---------*/
+* {
+    box-sizing: border-box;
+}
 body {
     color: var(--color-primary-dark);
     background-color: var(--color-primary-light);
@@ -42,10 +45,20 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 1,5;
+    margin: 0;
 }
+
+.section {
+    padding: 48px 0;
+}
+address {
+    font-style: normal;
+}
+
 ul {
     list-style: none;
 }
+
 a {
     text-decoration: none;
 }
@@ -62,10 +75,7 @@ background-color: var(--color-mobile-background);
     border: 2px, var(--color-brand-light), solid;
     border-radius: 8px;
     cursor: pointer;
-    padding-top: 16px;
-    padding-right: 32px;
-    padding-bottom: 16px;
-    padding-left: 32px;
+    padding: 16px 32px;
     border-width: 2px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -78,6 +88,32 @@ background-color: var(--color-mobile-background);
 }
 .button:focus {
     background-color: pink;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+.hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
 /*----------HEADER---------*/
@@ -93,10 +129,14 @@ background-color: var(--color-mobile-background);
 
 
 /*----------HERO---------*/
+.hero-section {
+    padding: 272px 0;
+}
 .hero-title {
     color: var(--color-primary-light);
     font-weight: 900;
     font-size: 128px;
+    margin-bottom: 0;
 }
 .hero-title-decoration {
     color: var(--color-brand-light);
@@ -125,6 +165,9 @@ background-color: var(--color-mobile-background);
 }
 
 /*-------------TRADITIONS----------*/
+.traditions-title {
+    margin-bottom: 42px;
+}
 .traditions-text .brand {
     color: var(--color-brand-light);
 }
@@ -132,19 +175,30 @@ background-color: var(--color-mobile-background);
     text-transform: uppercase;
     font-weight: 600;
 }
-
+.traditions-section {
+    padding-top: 96px;
+}
 /*-----CHEFS SECTION----------*/
-.chef-title {
+.chefs-title {
+    margin-bottom: 80px;
+}
+.chef-subtitle {
+    margin-bottom: 16px;
     font-size: 40px;
     font-weight: 600;
 }
 
 /*-----FORMATS SECTION----------*/
+
+.formats-title {
+    margin-bottom: 80px;
+}
+
 .formats-article {
     color: var(--color-primary-light);
     background-color: var(--color-mobile-background); /*тут буде фон*/
 }
-.formats-title {
+.formats-subtitle {
     font-size: 24px;
     font-weight: 600;
 }
@@ -155,8 +209,17 @@ background-color: var(--color-mobile-background);
 }
 
 /*------CONTACT SECTION---------*/
+.contact-title {
+    margin-bottom: 16px;
+}
+
 .contact-text {
     color: var(--color-brand-dark);
+}
+
+.map {
+    max-width: 603px;
+    width: 100%;
 }
 .contact-privacy-text {
     color: var(--color-primary-dark);
