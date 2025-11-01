@@ -57,6 +57,8 @@ address {
 
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -65,7 +67,7 @@ a {
 
 .header {
 background-color: var(--color-mobile-background);
-    /*тут будет фото*/
+    /*тут буде фото*/
 }
 
 
@@ -121,12 +123,39 @@ p {
     color: var(--color-primary-light);
     font-weight: 400;
 }
+
 .header-item-link:hover {
     color: var(--color-brand-light);
     font-weight: 600;
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    gap: 40px;
+}
 
+.header-navigation {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+}
+
+/*.header-logo {
+    margin-right: 152px;
+    margin-left: 103px;
+}*/
+.header-list {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+/*.header-item:not(:last-child) {
+margin-right: 64px;
+}*/
 
 /*----------HERO---------*/
 .hero-section {
@@ -143,13 +172,21 @@ p {
 }
 
 /*----------ADVANTAGES---------*/
-.advantages-list {
+.advantages-section {
     background-color: var(--color-brand-light);
-    color: var(--color-primary-light);
+}
+
+
+.advantages-list {
     font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 16px 112.5px;
 }
 
 .advantages-item {
+    color: var(--color-primary-light);
     font-size: 20px;
     font-weight: 300;
 }
@@ -165,19 +202,37 @@ p {
 }
 
 /*-------------TRADITIONS----------*/
+.traditions-content {
+    max-width: 710px;
+    justify-content: space-between;
+    gap: 40px;
+}
+
 .traditions-title {
     margin-bottom: 42px;
 }
+
+.traditions-text:last-child {
+    max-width: 340px;
+}
+
 .traditions-text .brand {
     color: var(--color-brand-light);
 }
+
 .traditions-text .uppercase {
     text-transform: uppercase;
     font-weight: 600;
 }
+
 .traditions-section {
     padding-top: 96px;
+    display: flex;
+    gap: 40px;
 }
+
+
+
 /*-----CHEFS SECTION----------*/
 .chefs-title {
     margin-bottom: 80px;
@@ -189,19 +244,31 @@ p {
 }
 
 /*-----FORMATS SECTION----------*/
-
-.formats-title {
-    margin-bottom: 80px;
+.formats-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 
+/*.formats-title {
+margin-bottom: 80px;
+}*/
+.formats-item {
+    background-color: var(--color-mobile-background);  /*тут буде фон*/
+    border-radius: 16px;
+    padding: 24px;
+    flex-basis: calc((100% - 40px) / 3);
+
+}
 .formats-article {
     color: var(--color-primary-light);
-    background-color: var(--color-mobile-background); /*тут буде фон*/
 }
+
 .formats-subtitle {
     font-size: 24px;
     font-weight: 600;
 }
+
 .formats-text {
     font-weight: 300;
     font-size: 14px;

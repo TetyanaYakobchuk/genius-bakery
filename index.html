@@ -17,41 +17,43 @@
     <title>Сучасна пекарня</title>
   </head>
   <body>
-    <!--HEADER-->
+    <!--------HEADER-------->
     <header class="header">
       <!--logo and menu-->
-      <nav class="header-navigation">
-        <a class="header-logo" href="index.html">
-          <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
-        </a>
-        <ul class="header-list">
-          <li class="header-item">
-            <a
-              class="header-item-link"
-              href="#traditions-section"
-              target="_blank"
-            >
-              Наші традиції</a
-            >
-          </li>
-          <li>
-            <a class="header-item-link" href="#chefs-section" target="_blank"
-              >Шеф-кухарі</a
-            >
-          </li>
-          <li>
-            <a class="header-item-link" href="#formats-section" target="_blank"
-              >Формати</a
-            >
-          </li>
-          <li>
-            <a class="header-item-link" href="#contact-section" target="_blank"
-              >Контакти</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <button class="button" type="button">Замовити дзвінок</button>
+      <div class="container header-container">
+        <nav class="header-navigation">
+          <a class="header-logo" href="index.html">
+            <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
+          </a>
+          <ul class="header-list">
+            <li class="header-item">
+              <a
+                class="header-item-link"
+                href="#traditions-section"
+                target="_blank"
+              >
+                Наші традиції</a
+              >
+            </li>
+            <li class="header-item">
+              <a class="header-item-link" href="#chefs-section" target="_blank"
+                >Шеф-кухарі</a
+              >
+            </li>
+            <li class="header-item">
+              <a class="header-item-link" href="#formats-section" target="_blank"
+                >Формати</a
+              >
+            </li>
+            <li class="header-item">
+              <a class="header-item-link" href="#contact-section" target="_blank"
+                >Контакти</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="button" type="button">Замовити дзвінок</button>
+      </div>
     </header>
     <!--MAIN-->
     <main>
@@ -66,7 +68,7 @@
       </div>
         <!--ADVANTAGES SECTION-->
         <div class="container">
-          <section class="section">
+          <section class="advantages-section section">
             <h2 class="hidden">Наші переваги</h2>
             <ul class="advantages-list">
               <li class="advantages-item">Великий попит на ринку</li>
@@ -82,14 +84,18 @@
 
     <div class="container">    
       <section class="traditions-section section" id="traditions-section">
-        <h2 class="traditions-title section-title">Новий формат традицій</h2>
-        <p class="traditions-text">
-          <span class="brand uppercase">shop bakery</span> — це пекарня, яка
-          взяла все найкраще, і зберегла смак традиційної випічки та
-          натуральність інгредієнтів. Ми працюємо як найвідоміші мережі —
-          <span class="brand">5 хвилин і замовлення готове</span>. А ще у наших
-          пекарень стильний дизайн та висока якість обслуговування!
-        </p>
+        <div class="traditions-content">
+          <h2 class="traditions-title section-title">Новий формат традицій</h2>
+          <p class="traditions-text">
+            <span class="brand uppercase">shop bakery</span> — це пекарня, яка
+            взяла все найкраще, і зберегла смак традиційної випічки та
+            натуральність інгредієнтів. </p>
+          <p class="traditions-text">
+            Ми працюємо як найвідоміші мережі —
+            <span class="brand">5 хвилин і замовлення готове</span>. А ще у наших
+            пекарень стильний дизайн та висока якість обслуговування!
+          </p>
+        </div>
         <img
           class="tradition-img"
           src="./images/baker-man.jpg"
@@ -131,43 +137,43 @@
       
 
       <!---------------FORMATS SECTION------------------------->
-    <div class="container">
+    <div class="container formats-container">
       <section class="section" id="formats-section">
         <h2 class="formats-title section-title">Формати</h2>
-        <ul>
-          <li>
+        <ul class="formats-list">
+          <li class="formats-item">
             <article class="formats-article">
               <h3 class="formats-subtitle" lang="en">Walrus</h3>
               <p class="formats-text">
-                Площа: до 120 м2 <br />
-                Меню: розширене меню <br />
-                Штат: 2 продавці-касири, 2 пекарі, 2 <br />
-                помічники пекаря,2 офіціанти-різнороби <br />
-                Посадкові місця: є <br />
+                Площа: до 120 м2 
+                Меню: розширене меню 
+                Штат: 2 продавці-касири, 2 пекарі, 2 
+                помічники пекаря,2 офіціанти-різнороби 
+                Посадкові місця: є 
               </p>
             </article>
           </li>
-          <li>
+          <li class="formats-item">
             <article class="formats-article">
               <h3 class="formats-title" lang="en">Horseshoe</h3>
               <p class="formats-text">
-                Площа: до 25 м2 <br />
-                Меню: розширене меню <br />
-                Штат: 2 продавці-касири, 2 пекарі, 1 <br />
-                помічник пекаря <br />
-                Посадкові місця: відсутні <br />
+                Площа: до 25 м2 
+                Меню: розширене меню
+                Штат: 2 продавці-касири, 2 пекарі, 1 
+                помічник пекаря 
+                Посадкові місця: відсутні 
               </p>
             </article>
           </li>
-          <li>
+          <li class="formats-item">
             <article class="formats-article">
               <h3 class="formats-title" lang="en">Handlebar</h3>
               <p class="formats-text">
-                Площа: до 15 м2 <br />
-                Меню: найпопулярніші позиції меню <br />
-                Штат: 1 продавець, 1 пекар, 1 помічник <br />
-                пекаря <br />
-                Посадкові місця: відсутні <br />
+                Площа: до 15 м2
+                Меню: найпопулярніші позиції меню
+                Штат: 1 продавець, 1 пекар, 1 помічник
+                пекаря
+                Посадкові місця: відсутні
               </p>
             </article>
           </li>
