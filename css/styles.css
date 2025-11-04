@@ -28,11 +28,13 @@
 
 
 :root {
-    --color-brand-light: #819B57;
+    --color-brand-normal: #819B57;
     --color-brand-dark: #465929;
+    --color-brand-light: #CFCFBC;
     --color-primary-light: #FAF4EA;
     --color-primary-dark: #31261A;
     --color-mobile-background: #CFCFBC;
+    --color-secondary-dark: #A18268;
 }
 /*----------BASE---------*/
 * {
@@ -44,7 +46,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: 1,5;
+    line-height: 1.5;
     margin: 0;
 }
 
@@ -65,16 +67,12 @@ a {
     text-decoration: none;
 }
 
-.header {
-background-color: var(--color-mobile-background);
-    /*тут буде фото*/
-}
 
 
 .button {
-    background-color: var(--color-brand-light);
+    background-color: var(--color-brand-normal);
     color: var(--color-primary-light);
-    border: 2px, var(--color-brand-light), solid;
+    border: 2px, var(--color-brand-normal), solid;
     border-radius: 8px;
     cursor: pointer;
     padding: 16px 32px;
@@ -125,7 +123,7 @@ p {
 }
 
 .header-item-link:hover {
-    color: var(--color-brand-light);
+    color: var(--color-brand-normal);
     font-weight: 600;
 }
 
@@ -158,9 +156,18 @@ margin-right: 64px;
 }*/
 
 /*----------HERO---------*/
+.background-image {
+    background-image: url(../images/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+}
+
 .hero-section {
     padding: 272px 0;
 }
+
 .hero-title {
     color: var(--color-primary-light);
     font-weight: 900;
@@ -168,12 +175,12 @@ margin-right: 64px;
     margin-bottom: 0;
 }
 .hero-title-decoration {
-    color: var(--color-brand-light);
+    color: var(--color-brand-normal);
 }
 
 /*----------ADVANTAGES---------*/
 .advantages-section {
-    background-color: var(--color-brand-light);
+    background-color: var(--color-brand-normal);
 }
 
 
@@ -217,7 +224,7 @@ margin-right: 64px;
 }
 
 .traditions-text .brand {
-    color: var(--color-brand-light);
+    color: var(--color-brand-normal);
 }
 
 .traditions-text .uppercase {
@@ -235,7 +242,26 @@ margin-right: 64px;
 
 /*-----CHEFS SECTION----------*/
 .chefs-title {
-    margin-bottom: 80px;
+    text-align: center;
+    margin: 0 auto 80px;
+    max-width: 520px;
+}
+
+.chefs-title::before,
+.chefs-title::after {
+    display: block;
+    width: 352px;
+    height: 2px;
+    border: 1px solid var(--color-brand-light);
+    content: "";
+
+}
+
+.chef-photo {
+        border-radius: 4px 4px 4px 200px;
+        box-shadow: 
+        -16px 16px 0 0 var(--color-primary-light), 
+        -16px 16px 0 2px var(--color-secondary-dark) ;
 }
 .chef-subtitle {
     margin-bottom: 16px;
@@ -244,32 +270,41 @@ margin-right: 64px;
 }
 
 /*-----FORMATS SECTION----------*/
-.formats-list {
+.format-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
 }
 
-/*.formats-title {
+/*.format-title {
+text-align: center;
 margin-bottom: 80px;
 }*/
-.formats-item {
-    background-color: var(--color-mobile-background);  /*тут буде фон*/
-    border-radius: 16px;
-    padding: 24px;
+.format-item {
     flex-basis: calc((100% - 40px) / 3);
-
-}
-.formats-article {
-    color: var(--color-primary-light);
+    
 }
 
-.formats-subtitle {
+
+.format-card {
+    padding: 24px;
+    border: 1px solid black; /*remove*/
+    border-radius: 16px;
+    color: black; /* заменить на праймери лайт*/
+    background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--color-primary-dark) 100%);
+    width: 349px;
+    height: 444px;
+}
+
+.format-title {
+    margin-bottom: 80px;
+}
+.format-subtitle {
     font-size: 24px;
     font-weight: 600;
 }
 
-.formats-text {
+.format-text {
     font-weight: 300;
     font-size: 14px;
     line-height: 1.5;
@@ -301,6 +336,11 @@ margin-bottom: 80px;
     background-color: #31261A; /*-тут буде фон-*/
     font-style: normal;
     font-family: 'Poppins', sans-serif;
+    background-image: url(/images/footer-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--color-primary-dark);
 }
 
 .footer-list-link {
@@ -311,12 +351,19 @@ margin-bottom: 80px;
     font-size: 16px;
     font-weight: 300;
     color: var(--color-primary-light);
+    text-decoration: none;
 }
+
+.address-link:hover {
+    color: var(--color-brand-normal);
+}
+
 .footer-privacy-link {
     color: var(--color-primary-light);
     font-weight: 300;
     font-size: 16px;
 }
+
 .footer-privacy-text {
     font-weight: 400;
     color: #A18268;

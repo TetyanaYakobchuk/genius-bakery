@@ -18,54 +18,56 @@
   </head>
   <body>
     <!--------HEADER-------->
-    <header class="header">
-      <!--logo and menu-->
-      <div class="container header-container">
-        <nav class="header-navigation">
-          <a class="header-logo" href="index.html">
-            <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
-          </a>
-          <ul class="header-list">
-            <li class="header-item">
-              <a
-                class="header-item-link"
-                href="#traditions-section"
-                target="_blank"
-              >
-                Наші традиції</a
-              >
-            </li>
-            <li class="header-item">
-              <a class="header-item-link" href="#chefs-section" target="_blank"
-                >Шеф-кухарі</a
-              >
-            </li>
-            <li class="header-item">
-              <a class="header-item-link" href="#formats-section" target="_blank"
-                >Формати</a
-              >
-            </li>
-            <li class="header-item">
-              <a class="header-item-link" href="#contact-section" target="_blank"
-                >Контакти</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <button class="button" type="button">Замовити дзвінок</button>
-      </div>
-    </header>
-    <!--MAIN-->
-    <main>
-      <!--------------HERO SECTION-------------------------->
-      
-      <div class="container">
-        <section class="section" class="hero-section">
-          <h1 class="hero-title">
-            <span class="hero-title-decoration">Сучасна</span> пекарня
-          </h1>
-        </section>
-      </div>
+    <div class="background-image">
+      <header class="header">
+        <!--logo and menu-->
+        <div class="container header-container">
+          <nav class="header-navigation">
+            <a class="header-logo" href="index.html">
+              <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
+            </a>
+            <ul class="header-list">
+              <li class="header-item">
+                <a
+                  class="header-item-link"
+                  href="#traditions-section"
+                  target="_blank"
+                >
+                  Наші традиції</a
+                >
+              </li>
+              <li class="header-item">
+                <a class="header-item-link" href="#chefs-section" target="_blank"
+                  >Шеф-кухарі</a
+                >
+              </li>
+              <li class="header-item">
+                <a class="header-item-link" href="#formats-section" target="_blank"
+                  >Формати</a
+                >
+              </li>
+              <li class="header-item">
+                <a class="header-item-link" href="#contact-section" target="_blank"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <button class="button" type="button">Замовити дзвінок</button>
+        </div>
+      </header>
+      <!--MAIN-->
+      <main>
+        <!--------------HERO SECTION-------------------------->
+        
+        <div class="container">
+          <section class="section hero-section">
+            <h1 class="hero-title">
+              <span class="hero-title-decoration">Сучасна</span> пекарня
+            </h1>
+          </section>
+        </div>
+    </div>
         <!--ADVANTAGES SECTION-->
         <div class="container">
           <section class="advantages-section section">
@@ -114,6 +116,7 @@
         <ul>
           <li>
             <article>
+              <img class="chef-photo" src="/images/Photo-chef-1.jpg" alt="Nastya chef">
               <h3 class="chef-subtitle">Настя</h3>
               <p>Привіт, я Настя!</p>
               <p>Вже 10 років, я втілюю у життя цікаві та смачні ідеї.</p>
@@ -122,6 +125,7 @@
           </li>
           <li>
             <article>
+              <img class="chef-photo"  src="/images/photo-chef-2.jpg" alt="Vlad chef">
               <h3 class="chef-title">Влад</h3>
               <p>Привіт, я Влад!</p>
               <p>
@@ -137,44 +141,50 @@
       
 
       <!---------------FORMATS SECTION------------------------->
-    <div class="container formats-container">
-      <section class="section" id="formats-section">
-        <h2 class="formats-title section-title">Формати</h2>
-        <ul class="formats-list">
-          <li class="formats-item">
-            <article class="formats-article">
-              <h3 class="formats-subtitle" lang="en">Walrus</h3>
-              <p class="formats-text">
-                Площа: до 120 м2 
-                Меню: розширене меню 
-                Штат: 2 продавці-касири, 2 пекарі, 2 
-                помічники пекаря,2 офіціанти-різнороби 
-                Посадкові місця: є 
-              </p>
+    <div class="container format-container">
+      <section class="section" id="format-section">
+        <h2 class="format-title section-title">Формати</h2>
+        <ul class="format-list">
+          <li class="format-item">
+            <article class="format-card">
+              <h3 class="format-subtitle" lang="en">Walrus</h3>
+                <div class="format-text">
+                  <p>Площа: до 120 м2</p> 
+                  <p>Меню: розширене меню </p>
+                  <p>
+                    Штат: 2 продавці-касири, 2 пекарі, 2 
+                    помічники пекаря,2 офіціанти-різнороби 
+                  </p>
+                  <p>Посадкові місця: є </p>
+                </div>
             </article>
           </li>
-          <li class="formats-item">
-            <article class="formats-article">
-              <h3 class="formats-title" lang="en">Horseshoe</h3>
-              <p class="formats-text">
-                Площа: до 25 м2 
-                Меню: розширене меню
-                Штат: 2 продавці-касири, 2 пекарі, 1 
-                помічник пекаря 
-                Посадкові місця: відсутні 
-              </p>
+          <li class="format-item">
+            <article class="format-card">
+              <h3 class="format-subtitle" lang="en">Horseshoe</h3>
+              <div class="format-text">
+                <p>Площа: до 25 м2</p> 
+                <p>Меню: розширене меню</p>
+                <p>
+                  Штат: 2 продавці-касири, 2 пекарі, 1 
+                  помічник пекаря 
+                </p>
+                <p>Посадкові місця: відсутні </p>
+              </div>
             </article>
           </li>
-          <li class="formats-item">
-            <article class="formats-article">
-              <h3 class="formats-title" lang="en">Handlebar</h3>
-              <p class="formats-text">
-                Площа: до 15 м2
-                Меню: найпопулярніші позиції меню
-                Штат: 1 продавець, 1 пекар, 1 помічник
-                пекаря
-                Посадкові місця: відсутні
-              </p>
+          <li class="format-item">
+            <article class="format-card">
+              <h3 class="format-subtitle" lang="en">Handlebar</h3>
+              <div class="format-text">
+                <p>Площа: до 15 м2</p>
+                <p>Меню: найпопулярніші позиції меню</p>
+                <p>
+                  Штат: 1 продавець, 1 пекар, 1 помічник
+                  пекаря
+                </p>
+                <p>Посадкові місця: відсутні</p>
+              </div>
             </article>
           </li>
         </ul>
