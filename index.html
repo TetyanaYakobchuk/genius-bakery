@@ -16,7 +16,6 @@
     <title>Сучасна пекарня</title>
   </head>
 
-  <>
     <!-------------------------HEADER------------------------->
     <header class="header">
       <div class="container">
@@ -26,10 +25,10 @@
                 <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
               </a>
               <ul class="header-list">
-                <li class="header-item"><a class="header-item-link" href="#traditions-section" target="_blank">Наші традиції</a></li>
-                <li class="header-item"><a class="header-item-link" href="#chefs-section" target="_blank">Шеф-кухарі</a></li>
-                <li class="header-item"><a class="header-item-link" href="#formats-section" target="_blank">Формати</a></li>
-                <li class="header-item"><a class="header-item-link" href="#contact-section" target="_blank">Контакти</a></li>
+                <li class="header-item"><a class="header-link" href="#traditions-section" target="_blank">Наші традиції</a></li>
+                <li class="header-item"><a class="header-link" href="#chefs-section" target="_blank">Шеф-кухарі</a></li>
+                <li class="header-item"><a class="header-link" href="#formats-section" target="_blank">Формати</a></li>
+                <li class="header-item"><a class="header-link" href="#contact-section" target="_blank">Контакти</a></li>
               </ul>
           </nav>
           <button class="modal-btn-open" type="button">Замовити дзвінок</button>
@@ -239,15 +238,17 @@
     </footer>
 
     <!------------MODAL WINDOW--------------->
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">
           <svg class="icon-close">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <h2>Замовити дзвінок</h2>
-        <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+        <div class="modal-content">
+          <h2>Замовити дзвінок</h2>
+          <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+        </div>
         <form action=""></form>
         <button class="modal-btn-open" type="button">Замовити дзвінок</button>
         <p>Натискаючи на кнопку я погоджуюсь </p>
