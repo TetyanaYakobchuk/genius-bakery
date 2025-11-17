@@ -1,0 +1,18 @@
+.link {
+    color: var(--color-primary-light);
+    text-decoration: none;
+}
+
+.link:hover {
+    color: var(--color-brand-normal);
+}
+
+.header-link {
+    color: var(--color-primary-light);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+    
+.header-link:hover {
+    color: var(--color-brand-normal);
+}
