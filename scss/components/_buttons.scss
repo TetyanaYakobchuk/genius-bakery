@@ -14,3 +14,16 @@
     background-color: transparent;
     color: var(--color-brand-dark);
 }
+
+.order-call-btn {
+    margin-top: 32px;
+    margin-bottom: 24px;
+    margin-left: 200px;
+    background-color: var(--color-brand-normal);
+    color: var(--color-primary-light);
+    border: 2px, var(--color-brand-normal), solid;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 16px 32px;
+    font-weight: 600;
+}

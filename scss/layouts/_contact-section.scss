@@ -1,39 +1,30 @@
 .contact-section {
     padding-bottom: 96px;
-}
 
-.contact-container {
-    display: flex;
-    flex-basis: calc((100% - 32px) / 2);
-    gap: 32px;
-}
+    &__container {
+        display: flex;
+        /*flex-basis: calc((100% - 32px) / 2);*/
+        gap: 32px;
+    }
 
-.contact-title {
-    margin-bottom: 16px;
-}
+    &__title {
+        margin-bottom: 16px;
+    }
 
-.contact-text {
-    color: var(--color-brand-dark);
-}
+    &__form-field {
+        margin-bottom: 24px;
+    }
 
-.order-call-btn {
-    margin-top: 32px;
-    margin-bottom: 24px;
-    margin-left: 200px;
-    background-color: var(--color-brand-normal);
-    color: var(--color-primary-light);
-    border: 2px, var(--color-brand-normal), solid;
-    border-radius: 8px;
-    cursor: pointer;
-    padding: 16px 32px;
-    font-weight: 600;
-}
+    &__button {
+        display: block;
+        margin: 0 auto 16px;
+    }
 
-/*!доработать кнопку, вывести лишнее*/
-.contact-map {
-    max-width: 603px;
-    width: 100%;
-    flex-shrink: 0;
-    border: none;
-    border-radius: 16px;
+    &__map {
+        max-width: 603px;
+        width: 100%;
+        flex-shrink: 0;
+        border: none;
+        border-radius: 16px;
+    }
 }
