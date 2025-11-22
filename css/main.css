@@ -42,10 +42,16 @@ body {
   color: var(--color-primary-dark);
   background-color: var(--color-primary-light);
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 300;
+  font-size: 16px;
   line-height: 1.5;
   margin: 0;
+}
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 18px;
+    font-weight: 400;
+  }
 }
 
 h1,
@@ -102,14 +108,14 @@ ul {
   overflow: hidden;
 }
 
-.modal-btn-open {
-  background-color: var(--color-brand-normal);
-  color: var(--color-primary-light);
-  border: 2px, var(--color-brand-normal), solid;
-  border-radius: 8px;
-  cursor: pointer;
+.button {
+  display: block;
   padding: 16px 32px;
+  color: var(--color-primary-light);
   font-weight: 600;
+  border: 2px solid var(--color-brand-normal);
+  background-color: var(--color-brand-normal);
+  border-radius: 8px;
   cursor: pointer;
 }
 
@@ -117,19 +123,6 @@ ul {
 .button:focus {
   background-color: transparent;
   color: var(--color-brand-dark);
-}
-
-.order-call-btn {
-  margin-top: 32px;
-  margin-bottom: 24px;
-  margin-left: 200px;
-  background-color: var(--color-brand-normal);
-  color: var(--color-primary-light);
-  border: 2px, var(--color-brand-normal), solid;
-  border-radius: 8px;
-  cursor: pointer;
-  padding: 16px 32px;
-  font-weight: 600;
 }
 
 .carousel-button {
@@ -248,24 +241,39 @@ ul {
 }
 
 .advantages-section {
-  background-color: var(--color-brand-normal);
   padding: 16px 0;
+}
+@media screen and (min-width: 1280px) {
+  .advantages-section {
+    background-color: var(--color-brand-normal);
+  }
 }
 .advantages-section__list {
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
+  flex-direction: column;
+  gap: 16px;
+  background-color: var(--color-mobile-background);
+  border-radius: 24px;
+  padding: 24px 40px;
+}
+@media screen and (min-width: 1280px) {
+  .advantages-section__list {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: transparent;
+    padding: 0;
+  }
 }
 .advantages-section__item {
-  color: var(--color-primary-light);
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 300;
 }
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+@media screen and (min-width: 1280px) {
+  .advantages-section__item {
+    font-size: 20px;
+    color: var(--color-primary-light);
+  }
 }
 
 .chefs-section__title {
@@ -483,8 +491,13 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: 32px;
+  padding-top: 16px;
   width: 100%;
+}
+@media screen and (min-width: 1280px) {
+  .header {
+    padding-top: 32px;
+  }
 }
 .header__container {
   display: flex;
@@ -498,25 +511,96 @@ ul {
   gap: 40px;
 }
 .header__menu {
-  display: flex;
-  gap: 64px;
-  flex-grow: 1;
-  justify-content: center;
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .header__menu {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+  }
+}
+.header__button {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .header__button {
+    display: block;
+  }
+}
+.header__burger {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  fill: var(--color-primary-light);
+}
+@media screen and (min-width: 1280px) {
+  .header__burger {
+    display: none;
+  }
 }
 
 .hero-section {
+  padding: 124px 0;
   background-image: linear-gradient(102.76deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url(../images/hero-image.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
 }
-
-.hero-title {
+@media screen and (min-width: 1280px) {
+  .hero-section {
+    padding: 272px 0;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(102.76deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url(../images/hero-image@2x.jpg);
+  }
+}
+.hero-section__title {
   color: var(--color-primary-light);
   font-weight: 900;
-  font-size: 128px;
-  margin-bottom: 0;
+  font-size: 67px;
+  margin-bottom: 48px;
   text-align: center;
+  line-height: 1;
+}
+@media screen and (min-width: 1280px) {
+  .hero-section__title {
+    font-size: 128px;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+}
+.hero-section__button {
+  margin: 0 auto;
+}
+@media screen and (min-width: 1280px) {
+  .hero-section__button {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-primary-light);
+  transform: translateX(100%);
+  transition: transform 0.3s;
+}
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+.mobile-menu__btn-close {
+  position: absolute;
+  top: 16px;
+  right: 24px;
 }
 
 .backdrop {
@@ -548,7 +632,7 @@ ul {
   background-color: var(--color-primary-light);
   border-radius: 32px;
   padding: 128px;
-  overflow: auto;
+  overflow-y: auto;
 }
 .modal__btn-close {
   position: absolute;
@@ -559,7 +643,6 @@ ul {
   margin-bottom: 32px;
 }
 .modal__button {
-  display: block;
   margin: 0 auto 24px;
 }
 
@@ -574,22 +657,39 @@ ul {
 }
 
 .section {
-  padding: 48px 0;
+  padding: 20px 0;
+}
+@media screen and (min-width: 1280px) {
+  .section {
+    padding: 48px 0;
+  }
 }
 .section__title {
-  font-size: 64px;
+  font-size: 32px;
   font-weight: 900;
-  line-height: 1.3;
+  line-height: 1.5;
 }
-.section--centered {
+@media screen and (min-width: 1280px) {
+  .section__title {
+    font-size: 64px;
+    line-height: 1.3;
+  }
+}
+.section__title--centered {
   text-align: center;
 }
 
 .traditions-section {
-  padding-top: 96px;
+  padding-top: 40px;
+}
+@media screen and (min-width: 1280px) {
+  .traditions-section {
+    padding-top: 96px;
+  }
 }
 .traditions-section__container {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 40px;
 }
@@ -598,6 +698,18 @@ ul {
 }
 .traditions-section__title {
   margin-bottom: 42px;
+}
+.traditions-section__text--limited {
+  max-width: 340px;
+}
+.traditions-section__image {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .traditions-section__image {
+    display: block;
+    border-radius: 400px 400px 0px 0px;
+  }
 }
 
 /*---------------- MODAL WINDOW --------------*/
